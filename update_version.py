@@ -12,6 +12,7 @@ if not build_number:
 
 config_xml_path = os.path.join(repo_path, 'config.xml')
 
+ElementTree.register_namespace('', 'http://www.w3.org/ns/widgets')
 tree = ElementTree.parse(config_xml_path)
 root = tree.getroot()
 

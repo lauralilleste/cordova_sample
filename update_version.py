@@ -7,7 +7,7 @@ from xml.etree import ElementTree
 repo_path = os.getenv('GREENHOUSE_BUILD_DIR')
 build_number = os.getenv('GREENHOUSE_BUILD_NUMBER')
 if not build_number:
-    print "No build number not available"
+    print "Build number is not available"
     sys.exit(1)
 
 config_xml_path = os.path.join(repo_path, 'config.xml')

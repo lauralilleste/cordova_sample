@@ -4,7 +4,7 @@ import os
 import sys
 from xml.etree import ElementTree
 
-repo_path = os.getenv('GREENHOUSE_BUILD_DIR')
+repo_path = os.getenv('GREENHOUSE_BUILD_DIR', '')
 build_number = os.getenv('GREENHOUSE_BUILD_NUMBER')
 if not build_number:
     print "Build number is not available"

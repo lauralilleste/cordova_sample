@@ -17,7 +17,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
 
-    <hook type="before_compile" src="update_version.js" />
+<!--    <hook type="before_compile" src="update_version.js" /> -->
 
     <platform name="android">
         <allow-intent href="market:*" />
